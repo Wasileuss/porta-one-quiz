@@ -53,5 +53,6 @@ document.addEventListener("DOMContentLoaded", function () {
   clearButton.addEventListener("click", function () {
       inputField.value = "";
       resultDiv.textContent = "";
+      lengthDiv.textContent = "";
   });
 });
