@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Цифровий пазл</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Цифровий пазл</h2>
+        <h3>Складаємо найдовший можливий цифровий пазл, об'єднуючи числа за певним правилом</h3>
+        <ol>
+          <li>Кожне число використовується лише один раз.</li>
+          <li>Два числа з'єднуються, якщо останні дві цифри першого числа збігаються з першими двома цифрами другого числа.</li>
+          <li>Порядок чисел у фінальній послідовності є безперервним (без розривів)</li>
+          <li>Результат - суцільний рядок з об'єднаних чисел.</li>
+        </ol>
+        <p>Приклад:</p>
+        <ul>
+          <li>Вхідні числа: 608017 248460 962282 994725 17709</li>
+          <li>Можлива правильна послідовність: 248460 → 608017 → 177092</li>
+          <li>Результат: 24846080177092</li>
+        </ul>
+        <textarea id="numberInput" rows="5" placeholder="Введіть числа через пробіл..."></textarea>
+        <div class="buttons">
+            <button id="submit">Знайти найдовшу послідовність</button>
+            <button id="clear">Очистити</button>
+        </div>
+        <div>
+          <p>Найдовша цифрова послідовність:</p>
+          <p id="result"></p>
+          <p>Довжина послідовності:</p>
+          <p id="length"></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
